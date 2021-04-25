@@ -1,11 +1,11 @@
 module.exports = (mongoose) => {
   var schema = mongoose.Schema(
     {
-      country: String,
-      capital: String,
-      population: Number,
-      language: String,
-      president: String,
+      country: { type: String, required: true },
+      capital: { type: String, required: true },
+      population: { type: String, required: true },
+      language: { type: String, required: true },
+      president: { type: String, required: true },
     },
     { timestamps: true }
   );
